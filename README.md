@@ -30,6 +30,7 @@ Simple build platform for wria2 and sheath projects.
       --jumpjs, --no-lint      Disable jshint
       --jumpcss, --no-csslint  Disable csslint
       -d, --dry                Dry run
+      -c, --combo              The application will use combo loader to fetch the depenencies
       --cwd <path>             Sets the base path for the build
       -u, --unique             Builds the rollup at the end
 

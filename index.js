@@ -25,6 +25,7 @@ program.version(packageJSON.version)
   .option('--jumpjs, --no-lint', 'Disable jshint')
   .option('--jumpcss, --no-csslint', 'Disable csslint')
   .option('-d, --dry', 'Dry run')
+  .option('-c, --combo', 'The application will use combo loader to fetch the depenencies')
   //! .option('-a, --aka', 'Replaces the modules for a short alias to reduce the length of the combo calls')
   .option('--cwd <path>', 'Sets the base path for the build', checkCWD)
   .option('-u, --unique', 'Builds the rollup at the end')
@@ -40,5 +41,6 @@ cli.compile({
   jumpcss: program.jumpcss || !program.csslint,
   cwd: program.cwd,
   dry: program.dry,
-  unique: program.unique
+  unique: program.unique,
+  combo: program.combo
 });
