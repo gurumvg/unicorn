@@ -1,4 +1,8 @@
 {{= it.body}}
 
 /* YUI CSS Detection Stamp */
+{{? it.skin}}
+#yui3-css-stamp.skin-{{= it.skin}}-{{= it.name}} { display: none; }
+{{??}}
 #yui3-css-stamp.{{= it.name}} { display: none; }
+{{?}}
